@@ -1,0 +1,81 @@
+html {
+    background-color: #282c34;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* Header */
+.header {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5%;
+    color:white;
+}
+
+img {
+    width:5%;
+    height:5%;
+}
+
+.headerTitle {
+    padding-left: 2%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Meme Form */
+.meme {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.meme-input {
+    width:45%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+    border-radius: 10px;
+    border:0px;
+    font-size: 20px;
+}
+
+.meme-input:first-child {
+    margin-right: 3.6%;
+}
+
+.create-meme {
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border:0px;
+    color: #555555;
+    background-image: linear-gradient(to right, rgb(249, 122, 122),rgb(255, 204, 111),
+                                                rgb(255, 255, 151),rgb(180, 255, 180),rgb(160, 160, 255),
+                                                rgb(207, 146, 250),rgb(255, 173, 255))
+}
+
+/* Meme Image */
+.meme-image {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.meme-image-final {
+    width:100%;
+    padding-top: 5%;
+    height: 25%;
+}
