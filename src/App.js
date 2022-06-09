@@ -8,7 +8,6 @@ const App = () => {
     <div>
       <Header name="yongen"/>
       <Meme />
-      <MemeImage />
     </div>
   )
 }

@@ -72,10 +72,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     width:100%;
+    margin-top: 10%;
 }
 
 .meme-image-final {
     width:100%;
-    padding-top: 5%;
+    height: 50%;
     height: 25%;
 }
