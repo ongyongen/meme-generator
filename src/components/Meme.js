@@ -19,12 +19,48 @@ const Meme = () => {
         })
     }
 
+    const [data, setFormData] = useState(
+        {
+            topText:"",
+            bottomText:""
+        }
+    )
+    const updateText = (event) => {
+        const {name, value} = event.target
+        setFormData((prev) => {
+            return {
+                ...prev,
+                [name] : value
+            }
+        })
+    }
+
     return (
         <div className="meme">
-            <input type="text" className="meme-input" placeholder="top text"/>
-            <input type="text"className="meme-input" placeholder="bottom text"/>
+            <input 
+                type="text" 
+                name="topText"
+                className="meme-input" 
+                placeholder="top text" 
+                onChange={updateText}
+                value={data.topText}
+            />
+            <input 
+                type="text"
+                name="bottomText"
+                className="meme-input" 
+                placeholder="bottom text" 
+                onChange={updateText}
+                value={data.bottomText}
+            />
+
             <button onClick={getNewMeme} className="create-meme">Get new Meme!</button>
-            <img src={meme.randomImage} className="meme-image"></img>
+            
+            <div className="meme">
+                <img src={meme.randomImage} className="meme-image"></img>
+                <h2 className="meme-text top">{data.topText}</h2>
+                <h2 className="meme-text bottom">{data.bottomText}</h2>
+            </div>
         </div>
     )
 }
